@@ -4,5 +4,7 @@ services:
     image: jupyter/datascience-notebook
     ports:
       - "8888:8888"
+    volumes:
+      - ./:/home/jovyan/work
     environment:
       - JUPYTER_TOKEN=admin
